@@ -1,3 +1,5 @@
+import "./listTodo.css"
+
 type ListTodoProps = { items: { id: number; text: string }[], onDeleteTodo: (id: number) => void }
 
 const ListTodo = ({ items, onDeleteTodo }: ListTodoProps) => {
@@ -6,7 +8,7 @@ const ListTodo = ({ items, onDeleteTodo }: ListTodoProps) => {
       {items.map(todo => (
         <li key={todo.id}>
           <span>{todo.text}</span>
-          <button onClick={onDeleteTodo.bind(null, todo.id)}>DELETE</button>
+          <button className="listButton" onClick={onDeleteTodo.bind(null, todo.id)}>Delete</button>
         </li>
       ))}
     </ul>
