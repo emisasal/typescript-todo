@@ -1,0 +1,25 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 16px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  width: 700px;
+}
+
+.listButton {
+  all: unset;
+  padding: 10px;
+  color: white;
+  background-color: cadetblue;
+  border-radius: 4px;
+  cursor: pointer;
+}
